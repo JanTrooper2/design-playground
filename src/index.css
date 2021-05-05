@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,12 +8,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 :root {
-  --text-color: black; 
+  font-size: 16px;
+  --text-primary: black; 
+  --text-secondary: white; 
+  --bg-primary: rgb(18, 18, 78);
+  --bg-secondary: rgb(29, 20, 15); 
   /* color: var(--text-color) */
 }
+/* use clamp( */
