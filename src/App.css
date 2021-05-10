@@ -2,3 +2,8 @@ main{
   margin-left: 5rem;
   padding: 1rem;
 }
+@media only screen and (max-width: 600px){
+  main{
+    padding-bottom: 6rem;
+  }
+}
