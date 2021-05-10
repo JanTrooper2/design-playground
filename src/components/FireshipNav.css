@@ -1,4 +1,4 @@
-nav {
+.navbar {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 200ms ease;
@@ -6,7 +6,7 @@ nav {
 }
 
 
-ul {
+.navbar-nav {
   list-style: none;
   height: 100%;
   padding: 0;
@@ -15,13 +15,13 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-li {
+.nav-item {
   width: 100%;
 }
-li:last-child { 
+.nav-item:last-child { 
   margin-top: auto;
 }
-.link {
+.nav-link {
   display: flex;
   align-items: center;
   height: 5rem;
@@ -30,59 +30,56 @@ li:last-child {
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
-.link:hover {
+.nav-link:hover {
   filter: grayscale(0%) opacity(1);
   background: var(--bg-secondary);
   color: var(--text-secondary);
 }
-span {
+.nav-desc {
   display: none;
   margin-left: 1rem;
 }
-svg {
+
+.svg-inline--fa{
+  color: #ff7eee;
+  transition: var(--transition-speed);
+  width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.svg-logo{
+  color: yellow;
+  transition: var(--transition-speed);
   width: 2rem;
   margin: 0 1.5rem;
 }
 
 
-.svg-inline--fa{
-  color: #ff7eee;
-  transition: var(--transition-speed);
-}
-
-.svg-logo{
-  color: yellow;
-}
-
-
 @media only screen and (min-width: 600px){
-  nav {
+  .navbar {
     top: 0;
     width: 5rem;
     height: 100vh;
   }
-  nav:hover {
+  .navbar:hover {
     width: 16rem;
   }
-  nav:hover span {
+  .navbar:hover .nav-desc {
     display: inline;
     transition: opacity var(--transition-speed);
   }
 }
 
 @media only screen and (max-width: 600px){
-  nav {
+  .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
   }
-  ul {
+  .navbar-nav {
     flex-direction: row;
   }
-  .link {
+  .nav-link {
     justify-content: center;
-  }
-  main {
-    margin: 0;
   }
 }

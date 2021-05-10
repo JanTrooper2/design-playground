@@ -1,5 +1,4 @@
 .cat-gif {
-  padding: auto;
   width: clamp(200px, 50%, 800px);
 }
 .gif-container {
