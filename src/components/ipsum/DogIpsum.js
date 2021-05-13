@@ -2,7 +2,7 @@ import './DogIpsum.css'
 
 const DogIpsum = () => {
   return (
-    <div>
+    <div className="dog-ipsum ipsum">
       <h1>Dog Ipsum</h1>
       <p>Doggo ipsum sub woofer porgo mlem. Long woofer shibe long woofer boofers pupper borkf puggorino, shoob pupper fat boi doing me a frighten puggo. Boofers shibe stop it fren clouds, shoob wrinkler boof adorable doggo, doggorino vvv. Waggy wags shooberino heckin angery woofer what a nice floof adorable doggo, ur givin me a spook wow such tempt doing me a frighten, boof boofers long doggo. ur givin me a spook wow such tempt. Pats puggorino puggo blep, maximum borkdrive. Shoob porgo tungg, such treat. Pupperino heckin angery woofer I am bekom fat big ol you are doin me a concern, stop it fren borking doggo. You are doin me a concern length boy aqua doggo the neighborhood pupper boof long woofer, he made many woofs puggo smol aqua doggo, long doggo big ol shibe heckin. Big ol wow such tempt long doggo ur givin me a spook smol borking doggo with a long snoot for pats doggo borkf heckin angery woofer, long bois noodle horse sub woofer snoot thicc.</p>
       <p>You are doing me a frighten clouds puggorino big ol pupper adorable doggo, much ruin diet maximum borkdrive boof. Wow such tempt blop very good spot shoober long doggo, wow very biscit heckin good boys. Borkdrive pupperino shoober sub woofer h*ck heckin angery woofer, noodle horse heckin what a nice floof fat boi. H*ck porgo he made many woofs very taste wow, what a nice floof. Heckin long woofer clouds, blep. Heckin good boys and girls doggorino fat boi such treat big ol thicc, stop it fren borking doggo most angery pupper I have ever seen. Mlem ur givin me a spook heckin good boys and girls doge, thicc heckin good boys and girls.</p>

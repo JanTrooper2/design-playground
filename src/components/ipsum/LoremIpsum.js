@@ -1,6 +1,7 @@
+import './LoremIpsum.css'
 const LoremIpsum = () => {
   return (
-    <div>
+    <div className="lorem-ipsum ipsum">
       <h1>Lorem Ipsum</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut volutpat metus. Phasellus tempor non nunc venenatis ultrices. Sed imperdiet at nisl non bibendum. Morbi id neque enim. Cras mattis justo eget libero aliquam interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum scelerisque vel elit vel scelerisque. Etiam et urna quis nisl aliquet bibendum.</p>
       <p>Mauris interdum, enim eget elementum lacinia, ex velit scelerisque ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin ex convallis in. Nulla tempus luctus enim, eu cursus nisl pretium ac. Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat, tempor eros vel, lacinia erat.</p>
