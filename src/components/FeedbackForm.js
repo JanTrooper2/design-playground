@@ -1,11 +1,13 @@
 import './FeedbackForm.css';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-const FeedbackForm = (props) => {
+const FeedbackForm = props => {
   return (
     <div className="feedback">
       <h2>Feedback Form</h2>
-      <p>Normal Text with a <span>span</span> part.</p>
+      <p>
+        Normal Text with a <span>span</span> part.
+      </p>
       <h3> Awesome</h3>
       <h3> Cool</h3>
       <h3> Radical</h3>
@@ -45,6 +47,6 @@ const FeedbackForm = (props) => {
       </section>
     </div>
   );
-}
+};
 
-export default FeedbackForm
+export default FeedbackForm;
