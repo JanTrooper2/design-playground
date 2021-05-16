@@ -40,7 +40,7 @@
   margin-left: 1rem;
 }
 
-.svg-inline--fa{
+.svg-item{
   color: #ff7eee;
   transition: var(--transition-speed);
   width: 2rem;
