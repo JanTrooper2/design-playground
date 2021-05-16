@@ -11,18 +11,38 @@ const FeedbackForm = (props) => {
       <h3> Radical</h3>
       <div className="feedback-form">
         <button className="feedback-button">Feedback</button>
-        <ul className="feedback-menu">
-          <li>
-            <Link to="/cat">Cat</Link>
-          </li>
-          <li>
-            <Link to="/dog">Dog</Link>
-          </li>
-          <li>
-            <Link to="/">Back</Link>
-          </li>
-        </ul>
+        <div className="feedback-menu">
+          <Link to="/cat">Cat</Link>
+          <Link to="/dog">Dog</Link>
+          <Link to="/">Back</Link>
+        </div>
       </div>
+      <section className="card-list">
+        <article className="card">
+          <header className="card-header">
+            <p>May 25th 2020</p>
+            <h2>Card Tricks are fun</h2>
+          </header>
+        </article>
+        <article className="card">
+          <header className="card-header">
+            <p>August 15th 2020</p>
+            <h2>Card Tricks are still fun</h2>
+          </header>
+        </article>
+        <article className="card">
+          <header className="card-header">
+            <p>February 30th 2021</p>
+            <h2>Card Tricks continue to be fun</h2>
+          </header>
+        </article>
+        <article className="card">
+          <header className="card-header">
+            <p>June 26th 2021</p>
+            <h2>Card Tricks remain fun</h2>
+          </header>
+        </article>
+      </section>
     </div>
   );
 }
