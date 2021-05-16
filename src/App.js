@@ -3,7 +3,7 @@ import FireshipNav from './components/FireshipNav.js';
 import LoremIpsum from './components/ipsum/LoremIpsum.js';
 import CatIpsum from './components/ipsum/CatIpsum.js';
 import DogIpsum from './components/ipsum/DogIpsum.js';
-
+import RestaurantScreen from './components/RestaurantScreen';
 import FeedbackForm from './components/FeedbackForm.js';
 
 import NotFound from './components/NotFound.js';
@@ -17,6 +17,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <LoremIpsum />
+            </Route>
+            <Route exact path="/restaurant">
+              <RestaurantScreen />
             </Route>
             <Route exact path="/cat">
               <CatIpsum />
