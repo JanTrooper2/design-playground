@@ -5,13 +5,14 @@ import CatIpsum from './components/ipsum/CatIpsum.js';
 import DogIpsum from './components/ipsum/DogIpsum.js';
 import RestaurantScreen from './components/RestaurantScreen';
 import FeedbackForm from './components/FeedbackForm.js';
-
+import {Provider} from 'react-redux';
+import store from './store';
 import NotFound from './components/NotFound.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <Provider store={store} className="App">
         <FireshipNav />
         <main className="content">
           <Switch>
@@ -35,7 +36,7 @@ function App() {
             </Route>
           </Switch>
         </main>
-      </div>
+      </Provider>
     </Router>
   );
 }
