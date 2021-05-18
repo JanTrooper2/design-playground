@@ -45,13 +45,12 @@
   transition: var(--transition-speed);
   width: 2rem;
   margin: 0 1.5rem;
+  flex-shrink: 0;
 }
-
-.svg-logo{
+#svg-logo {
   color: yellow;
-  transition: var(--transition-speed);
-  width: 2rem;
-  margin: 0 1.5rem;
+  width: 3rem;
+  margin: 0 1rem;
 }
 
 

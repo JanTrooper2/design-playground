@@ -14,7 +14,7 @@ describe('Listing Restaurants', () => {
       ],
     });
 
-    cy.visit('/');
+    cy.visit('/restaurant');
     cy.contains(sushiPlace);
     cy.contains(pizzaPlace);
   });
