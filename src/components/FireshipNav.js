@@ -12,7 +12,7 @@ const FireshipNav = props => {
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link to="/" className="nav-link">
-            <LightbulbSVG className="svg-logo" />
+            <LightbulbSVG className="svg-item" id="svg-logo" />
             <span className="nav-desc">DesignPlay</span>
           </Link>
         </li>
