@@ -44,14 +44,15 @@
 .svg-item{
   color: #ff7eee;
   transition: var(--transition-speed);
-  width: 2rem;
-  margin: 0 1.5rem;
+  width: clamp(1rem, 2rem, 2rem);
+  margin: 0 clamp(0.5rem, 1.5rem, 1.5rem);
   flex-shrink: 0;
 }
 #svg-logo {
   color: yellow;
-  width: 3rem;
-  margin: 0 1rem;
+  width: clamp(1.5rem, 3rem, 3rem);
+  margin: 0 clamp(0.25rem, 1rem, 1rem);
+
 }
 
 
@@ -78,6 +79,7 @@
   }
   .navbar-nav {
     flex-direction: row;
+    justify-content: space-evenly;
   }
   .nav-link {
     justify-content: center;
