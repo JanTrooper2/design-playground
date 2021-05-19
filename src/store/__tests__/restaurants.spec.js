@@ -5,6 +5,7 @@ import {loadRestaurants} from '../restaurants/actions';
 
 describe('restaurants', () => {
   let store;
+
   describe('initially', () => {
     it('does not have the loading flag set', () => {
       const initialState = {};
@@ -19,10 +20,15 @@ describe('restaurants', () => {
     });
   });
 
-  describe('loadRestaurants action', () => {
+  describe('when loading succeeds', () => {
+    const records = [
+      {id: 1, name: 'Sushi Place'},
+      {id: 2, name: 'Pizza Place'},
+    ];
+
     beforeEach(() => {
       const api = {
-        loadRestaurants: () => new Promise(() => {}),
+        loadRestaurants: () => Promise.resolve(records),
       };
       const initialState = {
         records: [],
@@ -35,19 +41,12 @@ describe('restaurants', () => {
       return store.dispatch(loadRestaurants());
     });
 
-    describe('when loading succeeds', () => {
-      const records = [
-        {id: 1, name: 'Sushi Place'},
-        {id: 2, name: 'Pizza Place'},
-      ];
+    it('stores the restaurants', () => {
+      expect(store.getState().records).toEqual(records);
+    });
 
-      it('stores the restaurants', () => {
-        expect(store.getState().records).toEqual(records);
-      });
-
-      it('clears the loading flag', () => {
-        expect(store.getState().loading).toEqual(false);
-      });
+    it('clears the loading flag', () => {
+      expect(store.getState().loading).toEqual(false);
     });
   });
 
