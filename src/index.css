@@ -17,6 +17,7 @@ code {
 
 :root {
   font-size: 16px;
+  line-height: 130%;
   --text-primary: black; 
   --text-secondary: white; 
   --bg-primary: rgb(18, 18, 78);
