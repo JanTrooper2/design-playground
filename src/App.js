@@ -4,7 +4,7 @@ import LoremIpsum from './components/ipsum/LoremIpsum.js';
 import CatIpsum from './components/ipsum/CatIpsum.js';
 import DogIpsum from './components/ipsum/DogIpsum.js';
 import RestaurantScreen from './components/RestaurantScreen';
-import FeedbackForm from './components/FeedbackForm.js';
+import FunStuff from './components/FunStuff.js';
 import {Provider} from 'react-redux';
 import store from './store';
 import NotFound from './components/NotFound.js';
@@ -28,8 +28,8 @@ function App() {
             <Route exact path="/dog">
               <DogIpsum />
             </Route>
-            <Route exact path="/feedback">
-              <FeedbackForm />
+            <Route exact path="/fun">
+              <FunStuff />
             </Route>
             <Route path="*">
               <NotFound />

@@ -35,7 +35,7 @@ const FireshipNav = props => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/feedback" className="nav-link">
+          <Link to="/fun" className="nav-link">
             <FeedbackSVG className="svg-item" />
             <span className="nav-desc">Fun Stuff</span>
           </Link>

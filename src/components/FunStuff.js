@@ -1,24 +1,8 @@
-import './FeedbackForm.css';
-import {Link} from 'react-router-dom';
+import './FunStuff.css';
 
-const FeedbackForm = props => {
+const FunStuff = props => {
   return (
-    <div className="feedback">
-      <h2>Feedback Form</h2>
-      <p>
-        Normal Text with a <span>span</span> part.
-      </p>
-      <h3> Awesome</h3>
-      <h3> Cool</h3>
-      <h3> Radical</h3>
-      <div className="feedback-form">
-        <button className="feedback-button">Feedback</button>
-        <div className="feedback-menu">
-          <Link to="/cat">Cat</Link>
-          <Link to="/dog">Dog</Link>
-          <Link to="/">Back</Link>
-        </div>
-      </div>
+    <article id="fun">
       <section className="card-list">
         <article className="card">
           <header className="card-header">
@@ -45,8 +29,12 @@ const FeedbackForm = props => {
           </header>
         </article>
       </section>
-    </div>
+      <section className="polygon-emoji">
+        <figure className="blue-eye"></figure>
+      </section>
+      <section className="light"></section>
+    </article>
   );
 };
 
-export default FeedbackForm;
+export default FunStuff;
