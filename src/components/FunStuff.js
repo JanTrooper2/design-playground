@@ -1,6 +1,7 @@
+import React, {useState} from 'react';
 import './FunStuff.css';
-
 const FunStuff = props => {
+  const [theme, setTheme] = useState('light');
   return (
     <article id="fun">
       <section className="card-list">
@@ -32,7 +33,25 @@ const FunStuff = props => {
       <section className="polygon-emoji">
         <figure className="blue-eye"></figure>
       </section>
-      <section className="light"></section>
+      <section className={theme + ' color-experiment'}>
+        <ul className="dropdown">
+          <li className="dropdown-item">
+            <button onClick={e => setTheme('light')} id="light">
+              light
+            </button>
+          </li>
+          <li className="dropdown-item">
+            <button onClick={e => setTheme('dark')} id="dark">
+              dark
+            </button>
+          </li>
+          <li className="dropdown-item">
+            <button onClick={e => setTheme('transparent')} id="solarize">
+              transparent
+            </button>
+          </li>
+        </ul>
+      </section>
     </article>
   );
 };
