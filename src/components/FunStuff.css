@@ -1,5 +1,5 @@
 #fun {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: hsl(204, 70%, 53%);
@@ -73,7 +73,7 @@
   --yellow: yellow;
 }
 .color-experiment {
-  height: 30%;
+  height: 30vh;
   margin: 3rem;
   width: 50%;
   display: flex;

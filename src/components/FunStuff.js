@@ -1,7 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './FunStuff.css';
 const FunStuff = props => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
   return (
     <article id="fun">
       <section className="card-list">
