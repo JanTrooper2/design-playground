@@ -84,4 +84,7 @@
   .nav-link {
     justify-content: center;
   }
+  .fun-link {
+    display: none;
+  }
 }
