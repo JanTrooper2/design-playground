@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Blog from './Blog.js';
 import './FunStuff.css';
 const FunStuff = props => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
@@ -55,6 +56,7 @@ const FunStuff = props => {
           </li>
         </ul>
       </section>
+      <Blog></Blog>
     </article>
   );
 };

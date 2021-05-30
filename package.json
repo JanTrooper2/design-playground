@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "cypress": "cypress open",
     "lint": "eslint src",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server -p5000 --watch data/db.json"
   },
   "eslintConfig": {
     "extends": [
