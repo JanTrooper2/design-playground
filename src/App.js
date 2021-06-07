@@ -1,8 +1,9 @@
-import './App.css';
+import './styles/App.css';
 import FireshipNav from './components/FireshipNav.js';
 import LoremIpsum from './components/ipsum/LoremIpsum.js';
 import CatIpsum from './components/ipsum/CatIpsum.js';
 import DogIpsum from './components/ipsum/DogIpsum.js';
+import Blog from './components/Blog.js';
 import RestaurantScreen from './components/RestaurantScreen';
 import FunStuff from './components/FunStuff.js';
 import {Provider} from 'react-redux';
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route exact path="/dog">
               <DogIpsum />
+            </Route>
+            <Route exact path="/blog">
+              <Blog />
             </Route>
             <Route exact path="/fun">
               <FunStuff />

@@ -1,9 +1,11 @@
-import './FireshipNav.css';
+import '../styles/FireshipNav.css';
 import {ReactComponent as LightbulbSVG} from './../images/lightbulb.svg';
 import {ReactComponent as RestaurantSVG} from './../images/restaurant.svg';
 import {ReactComponent as CatSVG} from './../images/cat.svg';
 import {ReactComponent as DogSVG} from './../images/dog.svg';
 import {ReactComponent as FeedbackSVG} from './../images/feedback.svg';
+import {ReactComponent as NotebookSVG} from './../images/notebook.svg';
+
 import {Link} from 'react-router-dom';
 
 const FireshipNav = props => {
@@ -32,6 +34,12 @@ const FireshipNav = props => {
           <Link to="/dog" className="nav-link">
             <DogSVG className="svg-item" />
             <span className="nav-desc">Dogs</span>
+          </Link>
+        </li>
+        <li className="nav-item nav-link">
+          <Link to="/blog" className="nav-link">
+            <NotebookSVG className="svg-item" />
+            <span className="nav-desc">Blog</span>
           </Link>
         </li>
         <li className="nav-item fun-link">

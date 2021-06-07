@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Blog from './Blog.js';
-import './FunStuff.css';
+import '../styles/FunStuff.css';
 const FunStuff = props => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   useEffect(() => {
@@ -56,7 +55,6 @@ const FunStuff = props => {
           </li>
         </ul>
       </section>
-      <Blog></Blog>
     </article>
   );
 };
