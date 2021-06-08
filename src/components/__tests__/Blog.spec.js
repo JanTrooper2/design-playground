@@ -1,6 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import {render, act} from '@testing-library/react';
+import {render, fireEvent} from '@testing-library/react';
+import {prettyDOM} from '@testing-library/dom';
 import Blog from '../Blog';
 
 describe('Blog', () => {
@@ -36,6 +37,18 @@ describe('Blog', () => {
       // console.log(component.container.querySelector('.entry-1'));
 
       expect(component.container).toHaveTextContent('Test Blog entry');
+    });
+  });
+  describe('testing tests setup', () => {
+    it('debugs', () => {
+      // console.log(prettyDOM(component.container.querySelector('figure')));
+      // component.debug();
+    });
+    it('presses Button', () => {
+      const mockHandler = jest.fn();
+      const button = render(<button onClick={mockHandler}>Hi</button>);
+      fireEvent.click(button.getByRole('button'));
+      expect(mockHandler.mock.calls).toHaveLength(1);
     });
   });
 });
