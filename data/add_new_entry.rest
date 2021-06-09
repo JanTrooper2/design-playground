@@ -1,0 +1,8 @@
+POST https://my-json-server.typicode.com/jantrooper2/json-server/blogs HTTP/1.1
+content-type: application/json
+
+{
+    "title": "sample",
+    "body": "false",
+    "author": "test"
+}
