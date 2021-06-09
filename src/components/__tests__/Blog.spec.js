@@ -41,7 +41,7 @@ describe('Blog', () => {
   });
   describe('testing tests setup', () => {
     it('debugs', () => {
-      // console.log(prettyDOM(component.container.querySelector('figure')));
+      prettyDOM(component.container.querySelector('figure'));
       // component.debug();
     });
     it('presses Button', () => {

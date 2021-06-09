@@ -26,6 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "cypress": "cypress open",
+    "test:e2e": "cypress run",
     "lint": "eslint src",
     "eject": "react-scripts eject",
     "server": "json-server -p5000 --watch data/db.json"
