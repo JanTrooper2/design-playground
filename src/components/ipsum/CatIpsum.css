@@ -1,8 +1,0 @@
-.cat-gif {
-  width: clamp(200px, 50%, 600px);
-}
-.gif-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}

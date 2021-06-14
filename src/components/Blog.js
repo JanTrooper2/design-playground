@@ -1,6 +1,6 @@
 // import axios from 'axios';
 import React from 'react';
-import '../styles/Blog.css';
+import {Flex, Text, Heading, useColorModeValue} from '@chakra-ui/react';
 
 const Blog = props => {
   // const [loading, setLoading] = useState(true);
@@ -22,13 +22,20 @@ const Blog = props => {
   //   .then(response => response.data);
 
   // const [notes, setNotes] = useState(convertPromiseToValue);
+  const blogBackground = useColorModeValue('gray.100', 'gray.700');
 
   return (
-    <section className="blog">
-      <h1>Blog</h1>
-      {props.children}
-      {/* {!loading && notes} */}
-    </section>
+    <Flex height="100vh" alignItems="center" justifyContent="center">
+      <Flex direction="column" background={blogBackground} p={10} rounded={6}>
+        <Heading textStyle="h2" mb={6}>
+          Blog
+        </Heading>
+        <Text>Dis some good shit</Text>
+
+        {props.children}
+        {/* {!loading && notes} */}
+      </Flex>
+    </Flex>
   );
 };
 

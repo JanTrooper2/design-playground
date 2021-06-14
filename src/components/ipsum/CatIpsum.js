@@ -1,9 +1,9 @@
-import './CatIpsum.css';
+import {Flex, Text, Heading, Image} from '@chakra-ui/react';
 const CatIpsum = () => {
   return (
-    <div className="cat-ipsum ipsum">
-      <h1>Cat Ipsum</h1>
-      <p>
+    <Flex direction="column" align="center">
+      <Heading>Cat Ipsum</Heading>
+      <Text>
         Crash against wall but walk away like nothing happened being gorgeous
         with belly side up. Eat the fat cats food poop on the floor, break a
         planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a
@@ -53,8 +53,8 @@ const CatIpsum = () => {
         as chair tuxedo cats always looking dapper but stare at owner accusingly
         then wink scratch the postman wake up lick paw wake up owner meow meow
         for crusty butthole meow.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Play time eats owners hair then claws head poop on grasses. Demand to
         have some of whatever the human is cooking, then sniff the offering and
         walk away Gate keepers of hell stare at guinea pigs a nice warm laptop
@@ -75,8 +75,8 @@ const CatIpsum = () => {
         for another person. Relentlessly pursues moth bite the neighbor's bratty
         kid for play time, but i will be pet i will be pet and then i will hiss
         purr purr purr until owner pets why owner not pet me hiss scratch meow.
-      </p>
-      <p>
+      </Text>
+      <Text>
         My left donut is missing, as is my right under the bed, or throwup on
         your pillow, and as lick i the shoes yet human is washing you why halp
         oh the horror flee scratch hiss bite but i show my fluffy belly but it's
@@ -147,8 +147,8 @@ const CatIpsum = () => {
         behind a closed door, emergency! abandoned! meeooowwww!!!, kick up
         litter yet good now the other hand, too cough furball into food bowl
         then scratch owner for a new one scream at teh bath.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Murr i hate humans they are so annoying plays league of legends for
         stare out cat door then go back inside and spend all night ensuring
         people don't sleep sleep all day haha you hold me hooman i scratch. Eat
@@ -202,15 +202,13 @@ const CatIpsum = () => {
         the night if human is on laptop sit on the keyboard chew the plant, yet
         hey! you there, with the hands for scratch the box yet leave fur on
         owners clothes so burrow under covers.
-      </p>
-      <div className="gif-container">
-        <img
-          className="cat-gif"
-          alt="Cat shooting Lightning Bolts"
-          src="https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/source.gif"
-        ></img>
-      </div>
-    </div>
+      </Text>
+      <Image
+        src="https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/source.gif"
+        alt="Cat shooting lightning bolts"
+        boxSize="clamp(200px, 50%, 600px)"
+      ></Image>
+    </Flex>
   );
 };
 

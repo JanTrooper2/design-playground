@@ -1,9 +1,10 @@
-import './LoremIpsum.css';
+import {Text, Heading} from '@chakra-ui/react';
+
 const LoremIpsum = () => {
   return (
     <div className="lorem-ipsum ipsum">
-      <h1>Lorem Ipsum</h1>
-      <p>
+      <Heading>Lorem Ipsum</Heading>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut volutpat
         metus. Phasellus tempor non nunc venenatis ultrices. Sed imperdiet at
         nisl non bibendum. Morbi id neque enim. Cras mattis justo eget libero
@@ -11,8 +12,8 @@ const LoremIpsum = () => {
         elit. Class aptent taciti sociosqu ad litora torquent per conubia
         nostra, per inceptos himenaeos. Vestibulum scelerisque vel elit vel
         scelerisque. Etiam et urna quis nisl aliquet bibendum.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -20,8 +21,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -36,8 +37,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -48,16 +49,16 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Curabitur placerat sed mauris ac tincidunt. Aliquam ornare tempus enim
         id scelerisque. Etiam pellentesque hendrerit pulvinar. Cras hendrerit
         erat quis urna hendrerit fermentum laoreet at orci. Praesent suscipit
         odio lacus, quis pharetra metus placerat in. Integer ornare tempus
         lacinia. Mauris vulputate accumsan malesuada. Morbi a orci eget nulla
         volutpat facilisis.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -68,16 +69,16 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Curabitur placerat sed mauris ac tincidunt. Aliquam ornare tempus enim
         id scelerisque. Etiam pellentesque hendrerit pulvinar. Cras hendrerit
         erat quis urna hendrerit fermentum laoreet at orci. Praesent suscipit
         odio lacus, quis pharetra metus placerat in. Integer ornare tempus
         lacinia. Mauris vulputate accumsan malesuada. Morbi a orci eget nulla
         volutpat facilisis.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -88,16 +89,16 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Curabitur placerat sed mauris ac tincidunt. Aliquam ornare tempus enim
         id scelerisque. Etiam pellentesque hendrerit pulvinar. Cras hendrerit
         erat quis urna hendrerit fermentum laoreet at orci. Praesent suscipit
         odio lacus, quis pharetra metus placerat in. Integer ornare tempus
         lacinia. Mauris vulputate accumsan malesuada. Morbi a orci eget nulla
         volutpat facilisis.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -105,8 +106,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -121,8 +122,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -133,8 +134,8 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>{' '}
-      <p>
+      </Text>{' '}
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -142,8 +143,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -158,8 +159,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -170,8 +171,8 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>{' '}
-      <p>
+      </Text>{' '}
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -179,8 +180,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -195,8 +196,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -207,8 +208,8 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>{' '}
-      <p>
+      </Text>{' '}
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -216,8 +217,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -232,8 +233,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -244,8 +245,8 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>{' '}
-      <p>
+      </Text>{' '}
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -253,8 +254,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -269,8 +270,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -281,8 +282,8 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>{' '}
-      <p>
+      </Text>{' '}
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -290,8 +291,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -306,8 +307,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -318,8 +319,8 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>{' '}
-      <p>
+      </Text>{' '}
+      <Text>
         Mauris interdum, enim eget elementum lacinia, ex velit scelerisque
         ligula, sed hendrerit ex ipsum eget turpis. Pellentesque porttitor nunc
         ac bibendum semper. Suspendisse faucibus finibus sapien, at sollicitudin
@@ -327,8 +328,8 @@ const LoremIpsum = () => {
         Donec sed dui sollicitudin, laoreet augue at, semper libero. Cras nec
         erat dapibus, tempus justo in, ultricies dolor. Mauris in ex feugiat,
         tempor eros vel, lacinia erat.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Nam vestibulum feugiat ipsum, eu pharetra quam accumsan id. Vivamus
         ultrices mauris at urna porta dignissim. Etiam condimentum nulla et
         turpis egestas dignissim. Maecenas in metus ac metus vehicula vestibulum
@@ -343,8 +344,8 @@ const LoremIpsum = () => {
         ut eleifend congue. Quisque vitae elit porttitor, pulvinar orci sit
         amet, sollicitudin lorem. Integer id erat ut tellus auctor pellentesque
         sit amet vitae ex.
-      </p>
-      <p>
+      </Text>
+      <Text>
         Duis auctor sapien ullamcorper fringilla condimentum. Curabitur euismod
         neque quis lacus aliquet fermentum. In dolor diam, consectetur eget
         lorem sed, fringilla commodo nisi. Nam gravida dui nisl, ut euismod erat
@@ -355,7 +356,7 @@ const LoremIpsum = () => {
         Vivamus consectetur elit sit amet nisl eleifend posuere. Etiam pretium,
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
-      </p>
+      </Text>
     </div>
   );
 };

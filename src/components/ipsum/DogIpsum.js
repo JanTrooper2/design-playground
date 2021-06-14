@@ -1,10 +1,10 @@
-import './DogIpsum.css';
+import {Flex, Text, Heading, Image} from '@chakra-ui/react';
 
 const DogIpsum = () => {
   return (
-    <div className="dog-ipsum ipsum">
-      <h1>Dog Ipsum</h1>
-      <p>
+    <Flex direction="column" align="center">
+      <Heading>Dog Ipsum</Heading>
+      <Text lineHeight="5%">
         Doggo ipsum sub woofer porgo mlem. Long woofer shibe long woofer boofers
         pupper borkf puggorino, shoob pupper fat boi doing me a frighten puggo.
         Boofers shibe stop it fren clouds, shoob wrinkler boof adorable doggo,
@@ -19,8 +19,8 @@ const DogIpsum = () => {
         wow such tempt long doggo ur givin me a spook smol borking doggo with a
         long snoot for pats doggo borkf heckin angery woofer, long bois noodle
         horse sub woofer snoot thicc.
-      </p>
-      <p>
+      </Text>
+      <Text lineHeight="5%">
         You are doing me a frighten clouds puggorino big ol pupper adorable
         doggo, much ruin diet maximum borkdrive boof. Wow such tempt blop very
         good spot shoober long doggo, wow very biscit heckin good boys.
@@ -31,8 +31,8 @@ const DogIpsum = () => {
         stop it fren borking doggo most angery pupper I have ever seen. Mlem ur
         givin me a spook heckin good boys and girls doge, thicc heckin good boys
         and girls.
-      </p>
-      <p>
+      </Text>
+      <Text lineHeight="5%">
         Big ol pupper puggo what a nice floof doge yapper, boof mlem maximum
         borkdrive, heckin angery woofer blep smol borking doggo with a long
         snoot for pats. Shoober lotsa pats heckin borking doggo, smol borking
@@ -47,8 +47,8 @@ const DogIpsum = () => {
         bekom fat big ol pupper super chub, aqua doggo bork long doggo heck.
         corgo porgo. Waggy wags fluffer noodle horse, you are doing me the
         shock.
-      </p>
-      <p>
+      </Text>
+      <Text lineHeight="5%">
         Stop it fren very taste wow wrinkler adorable doggo wow such tempt,
         clouds doggo corgo. Woofer aqua doggo you are doing me a frighten much
         ruin diet blep lotsa pats heckin good boys and girls, vvv h*ck smol most
@@ -63,16 +63,16 @@ const DogIpsum = () => {
         yapper, puggorino doggorino ur givin me a spook most angery pupper I
         have ever seen, pats yapper ruff. Wow very biscit doggo I am bekom fat
         stop it fren, pupperino ur givin me a spook.
-      </p>
-      <p>
+      </Text>
+      <Text lineHeight="5%">
         Much ruin diet long woofer porgo shooberino fat boi wow very biscit
         doggorino, shoob heckin he made many woofs blop. Pupperino much ruin
         diet noodle horse very hand that feed shibe thicc heck pats, pupper
         porgo doggo bork. Doing me a frighten what a nice floof doge sub woofer
         porgo doge sub woofer yapper, wrinkler lotsa pats big ol heckin good
         boys and girls shoob.
-      </p>
-      <p>
+      </Text>
+      <Text lineHeight="5%">
         Such treat most angery pupper I have ever seen sub woofer, the
         neighborhood pupper. Snoot puggorino extremely cuuuuuute very good spot,
         ur givin me a spook maximum borkdrive shoober, pupper borkdrive. Maximum
@@ -86,8 +86,8 @@ const DogIpsum = () => {
         me a frighten doggorino smol thicc ruff maximum borkdrive big ol pupper,
         porgo length boy maximum borkdrive heckin good boys and girls length
         boy.
-      </p>
-      <p>
+      </Text>
+      <Text lineHeight="5%">
         Smol doggorino boofers extremely cuuuuuute porgo, blop smol borking
         doggo with a long snoot for pats wow such tempt. Puggorino mlem tungg
         ruff, fat boi. Bork you are doin me a concern pupperino puggo maximum
@@ -102,15 +102,13 @@ const DogIpsum = () => {
         spot, shoob shoober you are doin me a concern very good spot. Fat boi
         you are doing me a frighten heckin angery woofer borkf tungg, long
         woofer snoot many pats.
-      </p>
-      <div className="gif-container">
-        <img
-          className="dog-gif"
-          alt="Dog being scared"
-          src="https://media.giphy.com/media/51Uiuy5QBZNkoF3b2Z/giphy.gif"
-        ></img>
-      </div>
-    </div>
+      </Text>
+      <Image
+        alt="Dog being scared"
+        src="https://media.giphy.com/media/51Uiuy5QBZNkoF3b2Z/giphy.gif"
+        boxSize="clamp(200px, 50%, 600px)"
+      ></Image>
+    </Flex>
   );
 };
 
