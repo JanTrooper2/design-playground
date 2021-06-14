@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import '../styles/FunStuff.css';
+import './FunStuff.css';
 const FunStuff = props => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   useEffect(() => {

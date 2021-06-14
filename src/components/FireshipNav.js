@@ -1,4 +1,4 @@
-import '../styles/FireshipNav.css';
+import './FireshipNav.css';
 import {ReactComponent as LightbulbSVG} from './../images/lightbulb.svg';
 import {ReactComponent as RestaurantSVG} from './../images/restaurant.svg';
 import {ReactComponent as CatSVG} from './../images/cat.svg';

@@ -1,12 +1,10 @@
 .navbar {
   position: fixed;
-  background-color: var(--bg-primary);
+  background-color: rgb(18, 18, 78);
   transition: width 200ms ease;
   --transition-speed: 600ms;
   z-index: 1000;
 }
-
-
 .navbar-nav {
   list-style: none;
   height: 100%;
@@ -26,15 +24,15 @@
   display: flex;
   align-items: center;
   height: 5rem;
-  color: var(--text-secondary);
+  color: white;
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
 }
 .nav-link:hover {
   filter: grayscale(0%) opacity(1);
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
+  background: rgb(29, 20, 15);
+  color: white;
 }
 .nav-desc {
   display: none;
