@@ -1,8 +1,8 @@
-import {Text, Heading} from '@chakra-ui/react';
+import {Flex, Text, Heading} from '@chakra-ui/react';
 
 const LoremIpsum = () => {
   return (
-    <div className="lorem-ipsum ipsum">
+    <Flex direction="column" align="center">
       <Heading>Lorem Ipsum</Heading>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut volutpat
@@ -357,7 +357,7 @@ const LoremIpsum = () => {
         ipsum vitae ullamcorper porta, mi nisl molestie lectus, at vehicula
         sapien nibh quis nulla. Etiam pharetra varius sollicitudin.
       </Text>
-    </div>
+    </Flex>
   );
 };
 
