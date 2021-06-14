@@ -1,4 +1,3 @@
-import './styles/App.css';
 import FireshipNav from './components/FireshipNav.js';
 import LoremIpsum from './components/ipsum/LoremIpsum.js';
 import CatIpsum from './components/ipsum/CatIpsum.js';
@@ -10,7 +9,7 @@ import {Provider} from 'react-redux';
 import store from './store';
 import NotFound from './components/NotFound.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Button, useColorMode} from '@chakra-ui/react';
+import {Flex, Button, useColorMode} from '@chakra-ui/react';
 
 function App() {
   const {toggleColorMode} = useColorMode();
@@ -28,7 +27,12 @@ function App() {
         >
           Toggle Dark Mode
         </Button>
-        <main className="content">
+        <Flex
+          as="main"
+          height={['calc(100% - 7rem)', 'calc(100% - 2rem)']}
+          marginLeft={['0', '5rem']}
+          marginBottom={['5rem', '0']}
+        >
           <Switch>
             <Route exact path="/">
               <LoremIpsum />
@@ -52,7 +56,7 @@ function App() {
               <NotFound />
             </Route>
           </Switch>
-        </main>
+        </Flex>
       </Provider>
     </Router>
   );

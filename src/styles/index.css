@@ -9,18 +9,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 :root {
-  font-size: 16px;
-  line-height: 130%;
   --text-primary: black; 
   --text-secondary: white; 
   --bg-primary: rgb(18, 18, 78);
   --bg-secondary: rgb(29, 20, 15); 
-  /* color: var(--text-color) */
 }
-/* use clamp( */
