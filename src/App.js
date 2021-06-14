@@ -10,11 +10,24 @@ import {Provider} from 'react-redux';
 import store from './store';
 import NotFound from './components/NotFound.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Button, useColorMode} from '@chakra-ui/react';
+
 function App() {
+  const {toggleColorMode} = useColorMode();
+
   return (
     <Router>
       <Provider store={store} className="App">
         <FireshipNav />
+        <Button
+          m="2"
+          pos="absolute"
+          top="0"
+          right="0"
+          onClick={toggleColorMode}
+        >
+          Toggle Dark Mode
+        </Button>
         <main className="content">
           <Switch>
             <Route exact path="/">
