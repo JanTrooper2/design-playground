@@ -16,13 +16,15 @@ const theme = extendTheme({
       color: 'red',
     },
     code: {
-      fontFamily: 'source-code-pro',
+      fontFamily: 'source-code-pro, monospace',
     },
   },
   components: {
     Text: {
       baseStyle: {
-        width: 'clamp(45ch, 50%, 75ch)',
+        fontFamily:
+          '"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+        width: ['clamp(30ch, 90%, 40ch)', 'clamp(45ch, 70%, 75ch)'],
         wordWrap: 'break-word',
         mt: '0.5em',
         mb: '0.5em',

@@ -206,7 +206,7 @@ const CatIpsum = () => {
       <Image
         src="https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/source.gif"
         alt="Cat shooting lightning bolts"
-        boxSize="clamp(200px, 50%, 600px)"
+        width="clamp(200px, 50%, 600px)"
       ></Image>
     </Flex>
   );
