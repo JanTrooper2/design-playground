@@ -2,7 +2,7 @@ import FireshipNav from './components/FireshipNav.js';
 import LoremIpsum from './components/ipsum/LoremIpsum.js';
 import CatIpsum from './components/ipsum/CatIpsum.js';
 import DogIpsum from './components/ipsum/DogIpsum.js';
-import Blog from './components/Blog.js';
+import Advice from './components/Advice.js';
 import RestaurantScreen from './components/RestaurantScreen';
 import FunStuff from './components/FunStuff.js';
 import {Provider} from 'react-redux';
@@ -46,8 +46,8 @@ function App() {
             <Route exact path="/dog">
               <DogIpsum />
             </Route>
-            <Route exact path="/blog">
-              <Blog />
+            <Route exact path="/advice">
+              <Advice />
             </Route>
             <Route exact path="/fun">
               <FunStuff />
