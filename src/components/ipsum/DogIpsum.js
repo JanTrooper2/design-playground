@@ -1,6 +1,31 @@
-import {Flex, Text, Heading, Image} from '@chakra-ui/react';
+import {Flex, Text, Button, Heading, Image} from '@chakra-ui/react';
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
-const DogIpsum = () => {
+const DogIpsum = ({factURL}) => {
+  const [visible, setVisible] = useState(false);
+  const [dogFact, setDogFact] = useState();
+
+  // CORS bridge required for external api, because it doesn't set CORS headers
+  useEffect(() => {
+    const fetchDogFact = async () => {
+      await axios
+        .get(
+          factURL
+            ? factURL
+            : 'https://cors.bridged.cc/https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?index=' +
+                Math.floor(Math.random() * 423),
+          {headers: {'X-Requested-With': 'XmlHttpRequest'}},
+        )
+        .then(res => {
+          setDogFact(res.data[0].fact);
+          return res.data[0].fact;
+        })
+        .catch(error => error);
+    };
+    fetchDogFact();
+  }, [factURL]);
+
   return (
     <Flex direction="column" align="center">
       <Heading>Dog Ipsum</Heading>
@@ -106,8 +131,12 @@ const DogIpsum = () => {
       <Image
         alt="Dog being scared"
         src="https://media.giphy.com/media/51Uiuy5QBZNkoF3b2Z/giphy.gif"
-        boxSize="clamp(200px, 50%, 600px)"
+        width="clamp(200px, 50%, 600px)"
       ></Image>
+      <Button m="5" onClick={() => setVisible(!visible)}>
+        Random Dog Fact
+      </Button>
+      {visible && <Text>Your Dog Fact: {dogFact}</Text>}
     </Flex>
   );
 };
