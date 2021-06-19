@@ -13,7 +13,6 @@ const theme = extendTheme({
       fontWeight: 'semibold',
       lineHeight: '110%',
       letterSpacing: '-1%',
-      color: 'red',
     },
     code: {
       fontFamily: 'source-code-pro, monospace',
@@ -24,10 +23,9 @@ const theme = extendTheme({
       baseStyle: {
         fontFamily:
           '"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
-        width: ['clamp(30ch, 90%, 40ch)', 'clamp(45ch, 70%, 75ch)'],
+        width: ['clamp(0ch, 90%, 40ch)', 'clamp(50ch, 70%, 75ch)'],
         wordWrap: 'break-word',
-        mt: '0.5em',
-        mb: '0.5em',
+        m: '0.5em',
       },
     },
   },
