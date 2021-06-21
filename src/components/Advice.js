@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {
   Flex,
@@ -23,7 +23,7 @@ const getAdvice = async source => {
 };
 const DailyAdvice = props => {
   const [adviceText, setAdviceText] = useState();
-  props.advice.then(res => setAdviceText(res));
+  !adviceText && props.advice.then(res => setAdviceText(res));
   return (
     <Text p="4" rounded={6} background={props.background}>
       {adviceText && adviceText}*
@@ -32,7 +32,7 @@ const DailyAdvice = props => {
 };
 const PersonalAdvice = props => {
   const [adviceText, setAdviceText] = useState();
-  props.advice.then(res => setAdviceText(res));
+  !adviceText && props.advice.then(res => setAdviceText(res));
   return (
     <Text p="4" rounded={6} background={props.background}>
       {adviceText && adviceText + '*'}
@@ -43,6 +43,12 @@ const Advice = () => {
   const containerBackground = useColorModeValue('gray.100', 'gray.700');
   const textBackground = useColorModeValue('green.200', 'green.700');
   const {isOpen, onToggle} = useDisclosure();
+  const [randomNumber, setRandomNumber] = useState();
+  const [searchTerm, setSearchTerm] = useState();
+  const handleSearch = e => {
+    e.preventDefault();
+  };
+  useEffect(() => setRandomNumber(Math.floor(Math.random() * 217)), []);
   return (
     <Flex direction="column" height="100vh" width="100%" align="center">
       <Heading as="h1" textDecoration="underline" p="10">
@@ -59,7 +65,10 @@ const Advice = () => {
         </Heading>
         <Center>
           <DailyAdvice
-            advice={getAdvice('https://api.adviceslip.com/advice/20')}
+            advice={getAdvice(
+              'https://api.adviceslip.com/advice/' +
+                new Date().getUTCDate() * 5,
+            )}
             background={textBackground}
           />
         </Center>
@@ -78,7 +87,9 @@ const Advice = () => {
           <Center>
             {isOpen && (
               <PersonalAdvice
-                advice={getAdvice('https://api.adviceslip.com/advice/20')}
+                advice={getAdvice(
+                  'https://api.adviceslip.com/advice/' + randomNumber,
+                )}
                 background={textBackground}
               />
             )}
@@ -95,17 +106,25 @@ const Advice = () => {
         <Heading mb="5" textAlign="center">
           Search
         </Heading>
-        <Flex as="form">
+        {/* <Flex as="form">
           <FormControl>
             <Input placeholder="Search Term" />
           </FormControl>
           <IconButton
-            type="submit"
             ml="3"
             aria-label="Search database"
             icon={<SearchIcon />}
+            onClick={handleSearch}
           />
-        </Flex>
+          {searchTerm && (
+            <PersonalAdvice
+              advice={getAdvice(
+                'https://api.adviceslip.com/advice/' + randomNumber,
+              )}
+              background={textBackground}
+            />
+          )}
+        </Flex> */}
       </Flex>
       <Text mt="auto" as="h6">
         *Disclaimer: This advice is not handpicked. Advice is sourced from:
