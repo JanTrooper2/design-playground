@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import axios from 'axios';
 import {
   Flex,
   Text,
@@ -13,17 +14,28 @@ import {
   Center,
 } from '@chakra-ui/react';
 import {SearchIcon} from '@chakra-ui/icons';
+const getAdvice = async source => {
+  const result = await axios
+    .get(source)
+    .then(res => res.data)
+    .catch(error => error);
+  return JSON.parse(result + '}').slip.advice;
+};
 const DailyAdvice = props => {
+  const [adviceText, setAdviceText] = useState();
+  props.advice.then(res => setAdviceText(res));
   return (
     <Text p="4" rounded={6} background={props.background}>
-      Sample Advice (hard-coded)
+      {adviceText && adviceText}*
     </Text>
   );
 };
 const PersonalAdvice = props => {
+  const [adviceText, setAdviceText] = useState();
+  props.advice.then(res => setAdviceText(res));
   return (
     <Text p="4" rounded={6} background={props.background}>
-      Your personal Advice
+      {adviceText && adviceText + '*'}
     </Text>
   );
 };
@@ -31,7 +43,6 @@ const Advice = () => {
   const containerBackground = useColorModeValue('gray.100', 'gray.700');
   const textBackground = useColorModeValue('green.200', 'green.700');
   const {isOpen, onToggle} = useDisclosure();
-
   return (
     <Flex direction="column" height="100vh" width="100%" align="center">
       <Heading as="h1" textDecoration="underline" p="10">
@@ -47,7 +58,10 @@ const Advice = () => {
           Advice of the Day
         </Heading>
         <Center>
-          <DailyAdvice background={textBackground} />
+          <DailyAdvice
+            advice={getAdvice('https://api.adviceslip.com/advice/20')}
+            background={textBackground}
+          />
         </Center>
       </Flex>
       <Flex
@@ -55,16 +69,19 @@ const Advice = () => {
         rounded="6"
         background={containerBackground}
         direction="column"
+        align="center"
       >
         <Button onClick={onToggle} m="10" colorScheme="teal">
           Personal Advice
         </Button>
-        <ScaleFade initialScale={0.8} in={isOpen} unmountOnExit>
+        <ScaleFade initialScale={0.8} in={isOpen}>
           <Center>
-            <PersonalAdvice
-              source="https://api.adviceslip.com/advice/20"
-              background={textBackground}
-            />
+            {isOpen && (
+              <PersonalAdvice
+                advice={getAdvice('https://api.adviceslip.com/advice/20')}
+                background={textBackground}
+              />
+            )}
           </Center>
         </ScaleFade>
       </Flex>
@@ -90,9 +107,13 @@ const Advice = () => {
           />
         </Flex>
       </Flex>
+      <Text mt="auto" as="h6">
+        *Disclaimer: This advice is not handpicked. Advice is sourced from:
+        "https://api.adviceslip.com/"
+      </Text>
     </Flex>
   );
 };
 
-export {DailyAdvice, PersonalAdvice};
+export {DailyAdvice, PersonalAdvice, getAdvice};
 export default Advice;
