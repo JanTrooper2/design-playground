@@ -47,6 +47,7 @@ const Advice = () => {
   const [searchTerm, setSearchTerm] = useState();
   const handleSearch = e => {
     e.preventDefault();
+    setSearchTerm();
   };
   useEffect(() => setRandomNumber(Math.floor(Math.random() * 217)), []);
   return (
@@ -99,6 +100,7 @@ const Advice = () => {
 
       <Flex
         direction="column"
+        display="none"
         background={containerBackground}
         p={10}
         rounded={6}
@@ -106,7 +108,7 @@ const Advice = () => {
         <Heading mb="5" textAlign="center">
           Search
         </Heading>
-        {/* <Flex as="form">
+        <Flex as="form">
           <FormControl>
             <Input placeholder="Search Term" />
           </FormControl>
@@ -124,7 +126,7 @@ const Advice = () => {
               background={textBackground}
             />
           )}
-        </Flex> */}
+        </Flex>
       </Flex>
       <Text mt="auto" as="h6">
         *Disclaimer: This advice is not handpicked. Advice is sourced from:
