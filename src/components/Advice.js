@@ -128,10 +128,10 @@ const Advice = () => {
           )}
         </Flex>
       </Flex>
-      <Text mt="auto" as="h6">
+      <Heading size="sm" m="2" mt="auto" as="h6">
         *Disclaimer: This advice is not handpicked. Advice is sourced from:
         "https://api.adviceslip.com/"
-      </Text>
+      </Heading>
     </Flex>
   );
 };
